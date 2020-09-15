@@ -1,0 +1,28 @@
+
+<h1>This is an ugly website</h1>
+<h2>Don't be mad. It's about the webserver anyway</h2>
+<h3>The purpose here is to showcase the cryptography used to have a secure login. Here's how it works:</h3>
+<p>Passwords are hashed with a salt upon account creation. This is done server side. HTTPS is used to make the connection secure when submitting passwords but I 
+    would like to eventually add in a client side hash as well for funzies. Perhaps with key stretching as well. Hashing and salts will be done with bcrypt. Error handling is piss poor
+    to say the least. But that's ok. I'll try and fix that or something.
+</p>
+
+<h1>Log In Here</h1>
+<form action="/login" method="POST">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Login</button>
+</form>
+<% if(passFlag){ %>
+    <p id="WrongPass" style="color:red;">Password Incorrect</p>
+    <%  } %>
+
+<h1>Sign-Up Here</h1>
+<form action="/make_user" method="POST">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Sign Up</button>
+</form>
+<% if(userFlag){ %>
+    <p id="WrongUser" style="color:red;">Username Taken</p>
+    <%  } %>
