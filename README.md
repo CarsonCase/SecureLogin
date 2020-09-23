@@ -1,7 +1,7 @@
 # SecureLogin
 UPDATE:
 Made Sept 22 2020,
-I was taking a web development and after learning how to use mongoDB and thought "hey I bet I can make a password storage thing". What I didn't know is that 5 chapters later I would learn how to actually do user authentication. So this was kinda my homemade authentication (minus sessions...). I guess I will upload the other version as a fork
+I was taking a web development and after learning how to use mongoDB and thought "hey I bet I can make a password storage thing". What I didn't know is that 5 chapters later I would learn how to actually do user authentication. So this was kinda my homemade authentication (minus sessions...). I wont upload it as authentication with passport and all that will be included in the YelpCamp code along for the tutorial I'll upload at the end of the course.
 
 Sept 15 2020,
 A simple NodeJS/MonboDB web server that can sign up and log-in users. User passwords are salted and hashed with bcrypt for security and server is hosted on HTTPS. Error handling is terrible and probably introduces a slew of vulnerabilities on it's own but for this version I really just was excited to be able to get a whole practically (for a small user base) secure database up and running in one night. 
